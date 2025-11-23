@@ -1,6 +1,8 @@
 *{
-    background-color: #000;
-    margin: 0;
+      margin: 0;
+}
+body{
+    background-color: #6b6868;
 }
 h1{
     color: #fff;
@@ -24,23 +26,68 @@ h1{
 }
 
 .carrossel {
-    width: 600px;
+    width: 800px;
     margin: auto;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     margin-top: 30px;
 }
+.slides:hover {
+    animation-play-state: paused;
+}
 .slides {
     display: flex;
-    
-    transition: 0.4s ease;
+    animation: autoplay 15s infinite;
 }
 .slide img {
-    width: 600px;
+    width: 800px;
     height: 300px;
     object-fit: cover;
 }
+
+
+
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(255, 0, 119);
+    background-color: #3c3e99;
+    padding: 20px;
+    max-width: 55%;
+    margin: auto;
+    margin-top: 15px;
+    gap: 5%;
+       
+}
+
+.info1 h3 {
+    color: #fff;
+    font-size: 22px;
+}
+.info2 img {
+justify-content: flex-end;
+width: 70px;
+height: 40px;
+padding: 10px 30px;
+
+}
+.info2 p {
+    color: #6464dd;
+    font-size: 22px;
+    align-items: center;
+    
+    
+}
+.info2-email p {
+    color: #fff;
+}
+
+
+
 #s1:checked ~ .slides{
     transform: translateX(0);}
 #s2:checked ~ .slides{
@@ -74,4 +121,21 @@ input#s3:checked ~ .nav label[for="s3"],
 input#s4:checked ~ .nav label[for="s4"],
 input#s5:checked ~ .nav label[for="s5"] {
     background: #6b6868;
+}
+
+@keyframes autoplay {
+     0% {transform: translateX(0);}
+    20% {transform: translateX(0);}
+
+    25% {transform: translateX(-100%);}
+    40% {transform: translateX(-100%);}
+
+    45% {transform: translateX(-200%);}
+    60% {transform: translateX(-200%);}
+
+    65% {transform: translateX(-300%);}
+    80% {transform: translateX(-300%);}
+
+    85% {transform: translateX(-400%);}
+   100% {transform: translateX(-400%);}
 }
