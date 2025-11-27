@@ -4,36 +4,61 @@
 
 body {
     background-color: #000;
+    padding-top: 10px;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
 }
 
 .container h1 {
+    margin: 0;
+    font-size: 12px;
     color: #fff;
-    font-size: 20px;
-    margin-top: 5%;
-    margin-left: 17%;
-    margin-bottom: 10px;
 
 }
 
 .container a {
     text-decoration: none;
     color: red;
-
+    margin-left: 10px
 }
 
 .barra-de-navegação {
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: 20px;
+    background: none;
+    padding: 0;
+    margin: 0;
     margin-left: 17%;
     align-items: center;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    z-index: 1000;
 }
 
 .barra-de-navegação a {
     color: #fff;
     font-size: 12px;
     text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
 }
 
 .barra-de-navegação a:hover {
@@ -95,7 +120,6 @@ body {
     font-size: 15px;
     color: #888585;
     text-decoration: none;
-
 }
 
 #s1:checked~.slides {
@@ -135,12 +159,11 @@ body {
 
 .container-dados h3 {
     color: #fff;
-    font-size: 18px;
-    margin-top: 5%;
     margin-left: 15%;
-    margin-bottom: 10px;
 
 }
+
+
 
 .galeria {
     display: flex;
@@ -157,7 +180,6 @@ body {
     height: auto;
 }
 
-
 .card {
     display: flex;
     flex-direction: column;
@@ -170,9 +192,13 @@ body {
     border-radius: 10px;
 }
 
-.card :hover {
-    width: 110%;
+.card a {
+    text-decoration: none;
 
+}
+
+.card :hover {
+    width: 105%;
 }
 
 .info-3 {
@@ -209,7 +235,7 @@ body {
 }
 
 .classificacao {
-    background: green;
+    background: rgb(240, 117, 117);
     padding: 4px 4px;
     border-radius: 30%;
     font-size: 15px;
@@ -244,7 +270,8 @@ body {
     margin-left: 180px;
     margin-top: 0;
 }
-.container-dados2 h3{
+
+.container-dados2 h3 {
     color: #fff;
     font-size: 18px;
     margin-top: 5%;
@@ -252,35 +279,31 @@ body {
     margin-bottom: 10px;
 
 }
+
 .galeria2 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 1%;
+    gap: 2%;
     margin-top: 20px;
     flex-wrap: wrap;
 }
+
 .galeria img {
     width: 100%;
     height: auto;
 }
 
-
-.breve {
+.card2 {
     display: flex;
     flex-direction: column;
     width: 230px;
     overflow: hidden;
 }
 
-.breve img {
+.card2 img {
     width: 100%;
     border-radius: 10px;
-}
-
-.breve :hover {
-    width: 110%;
-
 }
 
 
@@ -303,7 +326,7 @@ body {
 .categoria-4,
 .classificacao-4 {
     display: inline-block;
-    font-size: 12px;
+    font-size: 15px;
     padding-top: 8px;
 }
 
@@ -325,36 +348,81 @@ body {
     margin-left: 180px;
     margin-top: 0;
 }
+
 .classificacao-5 {
-    background: rgb(202, 135, 34);
-    padding: 6px 6px;
-    border-radius: 30%;
+    background: rgb(202, 149, 49);
+    /* padding: 2px 10px;*/
+    border-radius: 50%;
     font-size: 15px;
     font-weight: bold;
     color: #ffff;
     display: inline-block;
     margin-left: 180px;
-    margin-top: 0;
+    
+}
+
+.classificacao4,
+.classificacao-5 {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
 }
 
 
 
 
+.container-dados3 h4 {
+    display: flex;
+    font-size: 20px;
+    color: #fff;
 
 
+}
 
 
+.loja1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 15%;
+    gap: 10px;
+}
 
+.galeria3 {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    flex-wrap: wrap;
 
+}
 
+.card3 {
+    width: 280px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
 
+.card3 img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+   
+    
 
-
-
-
-
-
-
+}
+.card3 img:hover {
+      width: 102%;
+}
 
 
 
