@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #222222;
     padding-top: 10px;
     font-family: Montserrat, sans-serif;
 }
@@ -84,11 +84,12 @@ body {
     display: flex;
     animation: autoplay 15s infinite;
 }
-
 .slide img {
     width: 900px;
     height: 300px;
+    margin-top: 8%;
     object-fit: cover;
+   
 }
 
 .info-container {
@@ -203,6 +204,7 @@ body {
 
 .card :hover {
     width: 105%;
+    border-radius: 10%;
 }
 
 .info-3 {
@@ -311,7 +313,10 @@ body {
     border-radius: 10px;
 }
 
-
+.card2 :hover {
+    width: 105%;
+    border-radius: 10%;
+}
 
 .info-4 {
     display: flex;
@@ -357,7 +362,6 @@ body {
 
 .classificacao-5 {
     background: rgb(202, 149, 49);
-    /* padding: 2px 10px;*/
     border-radius: 50%;
     font-size: 15px;
     font-weight: bold;
@@ -429,40 +433,70 @@ body {
       transition: 0.3s;
 }
 
-
-
-
 .carrossel2 {
     width: 900px;
-    height: 300px;
+    margin: auto;
+    position: relative;
     overflow: hidden;
-
+    border-radius: 10px;
+    margin-top: 30px;
 }
 
-.card4 {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    animation: deslizar 35s linear infinite;
-   
+.slides2:hover {
+    animation-play-state: paused;
 }
 
-@keyframes deslizar {
-    0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(-200%);
-    }
-    75% {
-        transform: translateX(-300%);
-    }
-     100% {
-        transform: translateX(-400%);
-    }
+.slides2 {
+    display: flex;
+    animation: autoplay 15s infinite;
+}
+
+.slide2 img {
+    width: 900px;
+    height: 300px;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+.menu-redes {
+    display: flex;
+}
+.menu-redes_link {
+    margin-top: 5%;
+    margin-left: 17%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 2% 10%;
+}
+
+.menu-redes_link a {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-redes_link a:hover {
+    font-size: 22px;
+    color: #8d0d0d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.agente-conteiner  img {
+   padding-top: 60px;
+   padding-left: 21%;   
+}
+
+.horarios {
+    color: #FFFFFF;
     
 }
 
