@@ -1,45 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-        body {
-            background-color: #353434;
-            color: #fff;
-        }
-
-        .container-cadastro {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto;
-
-            padding-top: 20px;
-            border: 2px solid;
-
-        }
-
-        .icone-flexa img,
-        .icone-x img {
-            width: 35px;
-        }
-
-        .icone-flexa {
-          justify-content:flex-start ;
-        }
-
-        .icone-x {
-            justify-content: flex-end;
-        }
-
-       
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Cadastro</title>    
 </head>
-
 <body>
     <div class="container-cadastro">
         <div class="icone-flexa">
@@ -55,9 +23,135 @@
         <div class="cadastro-texto">
             <p>Cadastro</p>
         </div>
-
     </div>
+    <header>
+        <h1>ESTAMOS FELIZES QUE VOCÊ CHEGOU AQUI! <br>
+            CRIE SUA CONTA PARA COMPRAR INGRESSOS E GANHAR DESCONTOS
+        </h1>
+        <h2>
+            NOS CONTE SOBRE VOCÊ
+        </h2>
+    </header>
+    <form action="#" method="post">
+        <div class="formulario">
+            <!--Campo como gostaria de ser chamdo-->
+            <div class="campo">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Nome completo*" required>
+            </div>
+            <!--Campo: Genero-->
+            <div class="campo2">
+                <label for="genero"></label>
+                <select name="genero" id="genero" required>
+                    <option value="" disabled selected>Genero*</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="outro">Outro</option>
+                    <option value="nao-informar">Prefiro não informar</option>
+                </select>
+            </div>
+            <!--Campo: Como gostaria de ser chamado-->
+            <div class="campo3">
+                <label for="ser-chamado"></label>
+                <input type="text" name="ser-chamado" id="ser-chamado" placeholder="Como gostaria de ser chamado(a)?*"
+                    required>
+            </div>
+            <!--Campo: CPF-->
+            <div class="campo4">
+                <label for="cpf"></label>
+                <input type="text" name="cpf" id="cpf" placeholder="CPF*" required>
+            </div>
+            <!--Campo: Data de Nascimento-->
+            <div class="campo5">
+                <label for="date"></label>
+                <input type="date" name="date" id="date" required>
+            </div>
+            <div class="campo6">
+                <label for="option"></label>
+                <input type="checkbox" name="option" id="option" value="yes">
+                <p>Use o mesmo CPF para notas fiscais e recibos</p>
+            </div>
+        </div>
+    </form>
+    <h2>INFORMAÇÕES DE CONTATO</h2>
+    <form action="#" method="post">
+        <div class="formulario2">
+            <div class="campo7">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="E-mail*" required>
+            </div>
+            <div class="campo8">
+                <label for="tel"></label>
+                <input type="tel" name="tel" id="tel" placeholder="Telefone com DDD*" required>
+            </div>
+        </div>
+    </form>
+    <h2>ENDEREÇO</h2>
+    <!--dados da região, estado e cidade-->
+    <form action="#" method="post">
+        <div class="formulario2 endereco">
+            <div class="campo9">
+                <select name="estado" id="estado" required>
+                    <option value="" disabled selected>Estado*</option>
+                    <option value="santa-catarina">Santa Catarina</option>
+                </select>
+            </div>
+            <div class="campo10">
+                <select name="cidade" id="cidade" required>
+                    <option value="" disabled selected>Cidade*</option>
+                    <option value="blumenau">Blumenau</option>
+                    <option value="canelinha">Canelinha</option>
+                    <option value="brusque">Brusque</option>
+                    <option value="sao-joao-batista">São João Batista</option>
+                    <option value="tijucas">Tijucas</option>
+                    <option value="itapema">Itapema</option>
+                    <option value="nova-trento">Nova Trento</option>
+                    <option value="balneario">Balneario</option>
+                    <option value="florianopolis">Florianópolis</option>
+                    <option value="imbituba">Imbituba</option>
+                </select>
+            </div>
+        </div>
+    </form>
+    <h2>CRIE SUA SENHA</h2>
+    <form action="#" method="post">
+        <div class="formulario2">
+            <label for="senha"></label>
+            <input type="password" name="senha" id="senha" placeholder="Senha*" required>
+            <label for="repetir-senha"></label>
+            <input type="password" name="repetir-senha" id="repetir-senha" placeholder="Repetir senha*" required>
+            <p id="regras-senha2">
+                A senha deve conter entre 8 e 16 caracteres e cumprir com os requisitos abaixo: <br>
+                Pelo menos 8 caracteres
+            </p>
+        </div>
+        <br><br>
+        <div class="campo11 politicas-termos">
+            <div class="termo1">
+                <input type="checkbox" name="aceito-termos" id="aceito-termos" value="yes">
+                <label for="aceito-termos">
+                    
+                    <span>Li e aceito os
+                        <a href="https://www.cinemark.com.br/termos-de-uso" target="_blank">Termos de uso</a> Uso e a
+                        <a href="https://www.cinemark.com.br/politica-de-privacidade" target="_blank">Politica de Privacidade</a>
+                    </span>
 
+                </label>
+            </div>
+            <div class="termo2">
+                <input type="checkbox" name="confirmacao" id="confirmacao" value="yes"> <br><br>
+                <label for="confirmacao">
+                    <span> Declaro que todas as informações aqui são verdadeiras
+                    </span>
+                </label>
+            </div>
+        </div>
+    </form>
+    <footer>
+       <a href="#">
+        <h5>FINALIZAR CADASTRO</h5>
+       </a> 
+    </footer>
 
 </body>
 
