@@ -453,7 +453,6 @@ body {
 
 .menu-redes a {
     text-decoration: none;
-    font-size: 30px;
     font-weight: bold;
 
 }
@@ -494,8 +493,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
+    border: none;
+   
+    
 }
 
 .menu-redes_item {
