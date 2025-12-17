@@ -6,8 +6,6 @@
         margin-left: 300px;
     }
 
-
-
     .formulario input,
     .formulario2 input {
         width: 100%;
@@ -48,6 +46,7 @@
         margin-right: auto;
 
     }
+
 
     .campo {
         grid-column: 1 / 3;
@@ -230,8 +229,7 @@
 
     }
 
-    footer a,
-    footer h5 {
+    footer a {
         color: rgb(89, 90, 90);
         font-size: 25px;
         display: flex;
@@ -244,5 +242,242 @@
         margin-bottom: 50px;
     }
 
+    button {
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: rgb(89, 90, 90);
+        color: #fff;
+
+    }
+    button:hover {
+        background-color: #fff;
+        color: black;
+    }
 
     
+@media screen and (max-width:480px) 
+{
+    .container-cadastro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        
+    }
+    .icone-flexa {
+        grid-row: 1 / 3;
+
+    }
+    .icone-x {
+        grid-row: 1 / 3;
+        grid-column: 2 / 3;
+        margin-left: 160px;
+        overflow: hidden;
+    }
+    .cadastro-texto p {
+        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 1.4;
+
+    }
+
+    header h1, h2 {
+        align-self: center;
+        margin: 20px 5px 20px 30px ;
+        font-size: 15px;
+        line-height: 1.4;
+        padding-bottom: 5px;
+        padding-top: 20px;
+    }
+
+
+    .formulario,
+    .formulario2 {
+        margin: 20px auto;
+        left: auto;
+        left: auto;
+        transform: none;
+        position: static;
+        flex-direction: column;
+        width: 85%;
+        padding: 0 10px 10px 0;
+    }
+
+    #name,
+    #genero,
+    #cpf,
+    #date,
+    #email,
+    #senha,
+    #tel,
+    #repetir-senha {
+        font-size: 18px;
+    }
+
+
+    .campo,
+    .campo2,
+    .campo3,
+    .campo4,
+    .campo5,
+    .campo6,
+    .campo7,
+    .campo8,
+    .campo11 {
+        margin-left: 0;
+        transform: none;
+        width: 100%;
+    }
+    .campo4 {
+        width: 93%;
+
+    }
+    /*
+    .campo6 {
+        align-items: center;
+        gap: 8px;
+    }
+    .campo6 p {
+        display: flex;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+       
+    }*/
+    .campo6 {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        margin-top: 15px;
+
+    }
+    .campo6 p {
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: visible;
+        text-overflow: unset;
+        max-width: 90%;
+        font-size: 14px;
+        line-height: 1.3;
+        
+
+
+    }
+
+    .campo input {
+        font-size: 15px;
+    }
+    
+
+    .formulario2.endereco {
+        display: grid;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0 10px;
+        margin: 20px auto;
+        left: auto;
+        left: auto;
+        transform: none;
+        position: static;
+        width: 88%;
+        padding: 0 10px 10px 0;
+        
+    }
+    #regras-senha2 {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-top: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    }
+
+    .campo9,
+    .campo10 {
+        width: 102%;
+        margin-left: 0;
+        transform: none;
+        gap: 5px;
+    }
+    .campo9 select,
+    .campo10 select {
+        width: 100%;
+        font-size: 16px;
+        border-radius: 6px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+ 
+
+    .politicas-termos {
+        margin: 16px 0;
+        padding: 0 16px;
+        position: sticky;
+        transform: none;
+        left: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+        width: 100%;
+        
+    }
+    
+    .politicas-termos .termo1,
+    .politicas-termos .termo2 {
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+        margin: 8px 0;
+        line-height: 1.4;
+    }
+    .formulario2 input[type="checkbox"] {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1.3);
+        cursor: pointer;
+        margin-left: 10px;
+        gap: 15px;
+
+    }
+    
+    .termo1,
+    .termo2 {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .termo1 span {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    .termo2 span {
+        font-size: 17px;
+    }
+   
+    button {
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: rgb(89, 90, 90);
+        color: #fff;
+
+    }
+}
