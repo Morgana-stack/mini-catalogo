@@ -8,6 +8,99 @@
     <link rel="stylesheet" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
+
+        @media screen and (max-width:480px) {
+            .img1 {
+                display: flex;
+                justify-content: flex-start;
+                margin-left: 5px;
+                max-width: 200px;
+            }
+
+            .tabela {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 150px;
+                padding-right: 30px;
+                width: 100px;
+                height: 80px;
+                gap: 10px;
+            }
+
+            .Btn {
+                top: 230px;
+                left: 155px;
+                justify-content: center;
+                width: 30px;
+                height: 30px;
+
+            }
+
+            .svgContainer {
+                width: 10px;
+            }
+
+
+            .text {
+                font-weight: normal;
+                position: static;
+                margin: 40px 0 20px 0;
+                padding: 0;
+                text-align: justify;
+                width: 100%;
+                overflow: hidden;
+
+            }
+
+            .text p {
+                font-size: 20px;
+            }
+
+            .descricao-filme {
+                width: 100%;
+                max-width: 100%;
+                margin: 12px 0 0;
+                padding: 0 16px;
+                left: 0;
+                box-sizing: border-box;
+                text-align: justify;
+                text-align: start;
+            }
+
+            .BG {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #ff0000;
+                z-index: -1;
+                border-radius: 10px;
+                pointer-events: none;
+                transition: all 0.3s;
+            }
+
+            .horarios {
+                margin-top: 20px;
+            }
+
+            .tabela {
+                margin: 10px auto 0;
+                width: 80%;
+                justify-content: center;
+                gap: 6px;
+                padding: 0 10px;
+                text-align: justify;
+
+            }
+
+            .tabela p {
+                flex: 1;
+                align-items: center;
+
+            }
+        }
     </style>
 </head>
 
@@ -15,11 +108,12 @@
 
 </head>
 
-<body style="background: #12100D"></body>
-<header class="container">
+<body style="background: #12100D">
+    <header class="container">
         <div class="faixa-topo">
             <h1>ELDORADO
-                <a href="index.html">CINEPRIME</a></h1>
+                <a href="index.html">CINEPRIME</a>
+            </h1>
             <nav class="barra-de-navegacao">
                 <a href="#">PROGRAMAÇÃO</a>
                 <a href="#">CINEMAS</a>
@@ -29,43 +123,51 @@
             </nav>
         </div>
     </header>
-<main>
-    <div class="agente-conteiner">
-        <img class="img1" src="imagens/DPA4.webp">
-        <h1 class="horarios">HORÁRIOS</h1>
-    </div>
-    <div class="tabela">
-        <p id="hr1">Sábado<br><br>20/12</p>
-        <p class="hr2">Domingo <br><br>21/12</p>
-        <p class="hr2">Segunda<br><br>22/12</p>
-        <p id="hr3">Terça<br><br>23/12</p>
-    </div>
-    <a href="trailer8.html">
-        <button class="Btn">
-            <span class="svgContainer">
-                <svg viewBox="0 0 576 512" fill="white" height="1.6em" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z">
-                    </path>
-                </svg>
-            </span>
-            <span class="BG"></span>
-        </button>
-    </a>
-    <div class="informacoes">
-        <img src="imagens/6.svg" width="20px">
-        <p style="margin-left: 5px; margin-top: 3px;">Comedia</p>
+    <main>
 
-        </p>
-    </div>
-    <div class="text">
-       <p>Em D.P.A. 4 - O Fantástico Reino de Ondion, dois terços do time de Detetives <br> do Prédio Azul precisarão encarar uma nova aventura e decifrar enigmas <br> perigosos em um mundo colorido repleto de duendes e outros seres mágicos <br>que vivem numa floresta encantada. Depois que Max some misteriosamente,<br> Mel e Zeca vão em busca do amigo numa missão super arriscada que os coloca <br> no meio do reino de Ondion após atravessarem o portal do apartamento 333 <br>do Prédio Azul. Para descobrirem o paradeiro de Max, a dupla de investigadores<br>embarca numa jornada pela vila mágica e lúdica onde existem castelos, barracas <br> que vendem biscoitos flutuantes, flores falantes e frutas malabaristas. Enquanto <br> tentam localizar o companheiro, o vilão Juks arma um plano do mal junto com o <br> bruxo Rumorum para roubar o Cetro Onírion, que tem o poder de realizar os mais impossíveis desejos, e dominar o reino bruxesco. Uma grande missão aguarda os <br> três amigos que precisarão se juntar com Leocádia, Berenice, Berta e Brisa para <br> salvar o reino das garras de um grande mal. Classificação indicativa 6 Anos. Contém violência.
+        <div class="agente-conteiner1">
+            <img class="img1" src="imagens/DPA4.webp">
+            <a href="trailer8.html">
+                <button class="Btn">
+                    <span class="svgContainer">
+                        <svg viewBox="0 0 576 512" fill="white" height="1.6em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="BG"></span>
+                </button>
+            </a>
+            <div class="info-filme">
+                <img src="imagens/6.svg" width="20px">
+                <span class="genero">Comédia</span>
+            </div>
 
-</p>
+            <h1 class="horarios">HORÁRIOS</h1>
+        </div>
+        <div class="tabela">
+            <p id="hr1">Sábado<br><br>20/12</p>
+            <p class="hr2">Domingo <br><br>21/12</p>
+            <p class="hr2">Segunda<br><br>22/12</p>
+            <p id="hr3">Terça<br><br>23/12</p>
+        </div>
 
+        <div class="text">
+            <p>Em D.P.A. 4 - O Fantástico Reino de Ondion, dois terços do time de Detetives do Prédio Azul
+                precisarão encarar uma nova aventura e decifrar enigmas perigosos em um mundo colorido repleto de
+                duendes e outros seres mágicos que vivem numa floresta encantada. Depois que Max some
+                misteriosamente, Mel e Zeca vão em busca do amigo numa missão super arriscada que os coloca no
+                meio do reino de Ondion após atravessarem o portal do apartamento 333 do Prédio Azul. Para
+                descobrirem o paradeiro de Max, a dupla de investigadores embarca numa jornada pela vila mágica e
+                lúdica onde existem castelos, barracas que vendem biscoitos flutuantes, flores falantes e frutas
+                malabaristas. Enquanto tentam localizar o companheiro, o vilão Juks arma um plano do mal junto com
+                o bruxo Rumorum para roubar o Cetro Onírion, que tem o poder de realizar os mais impossíveis
+                desejos, e dominar o reino bruxesco. Uma grande missão aguarda os três amigos que precisarão se
+                juntar com Leocádia, Berenice, Berta e Brisa para salvar o reino das garras de um grande mal.
+                Classificação indicativa 6 Anos. Contém violência.
+            </p>
+      </main>
+  </body>
 
-
-
-
-</main>
-</body>
+</html>
